@@ -7,9 +7,9 @@ const {success, err, errors} = require('../../helpers/response');
 
 router.get('/', list);
 
-// router.get('/:id', [
-//     check('id', 'Invalid id').notEmpty().isMongoId(),
-// ], listOne);
+router.get('/:id', [
+    check('id', 'Invalid id').notEmpty().isMongoId(),
+], listOne);
 
 // router.post('/', add);
 
