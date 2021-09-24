@@ -21,9 +21,6 @@ router.get('/:id', [
 //     check('id', 'Invalid id').notEmpty().isMongoId(),
 // ], remove);
 
-
-
-
 async function list(req, res) {
     try {
         const result = await controller.get(req);

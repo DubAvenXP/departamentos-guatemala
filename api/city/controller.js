@@ -23,7 +23,7 @@ const get = async (req = request) => {
 const getOne = async (req = request) => {
     const { id } = req.params;
 
-    const city = await User.findById(id);
+    const city = await City.findById(id);
 
     return city;
 };
